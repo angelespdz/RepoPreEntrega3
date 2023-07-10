@@ -1,0 +1,467 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fondoplaya {
+  background-image: url(img/fondoplayareco.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.header {
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  float: left;
+  margin-left: 0 0 0 0;
+}
+
+.navbar {
+  float: right;
+}
+
+.nav-enlace {
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 25px;
+  margin-top: 7%;
+  font-family: "Roboto", sans-serif;
+}
+.nav-enlace:hover {
+  color: #1A748E;
+}
+
+.main1 {
+  height: 45%;
+}
+
+.frase {
+  color: white;
+  font-family: "Cinzel", sans-serif;
+  font-size: 30px;
+  margin: 10%;
+  text-shadow: 2px 2px 2px black;
+}
+
+.borde1 {
+  background-image: url(img/borde2.png);
+  height: 15%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nosotros {
+  background-color: #1A748E;
+  height: 100%;
+  font-family: "roboto", sans-serif;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 90px;
+  color: #55C4D7;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.division1 {
+  background-image: url(img/playaparaiso.jpg);
+  width: 100%;
+  height: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.main2 {
+  background-color: #55C4D7;
+  height: 340%;
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+.slider {
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+  margin: 10%;
+}
+.slider ul {
+  width: 400%;
+  display: flex;
+  animation: cambio 12s infinite;
+}
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+.slider img {
+  width: 100%;
+  height: 100%;
+}
+
+.habitacion {
+  background-color: #55C4D7;
+  height: 5%;
+}
+
+.nombre {
+  color: #1A748E;
+  font-size: 65px;
+  font-family: "Cormorant Garamond", sans-serif;
+  margin-left: 10%;
+  float: left;
+  margin-top: 3%;
+  text-align: left;
+}
+
+.descripcion {
+  color: white;
+  font-size: 18px;
+  font-family: "roboto", sans-serif;
+  margin-right: 10%;
+  float: right;
+  margin-top: 4%;
+  text-align: center;
+}
+
+.division2 {
+  background-image: url(img/piscina.jpg);
+  width: 100%;
+  height: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.main3 {
+  height: 90%;
+  background-color: #992915;
+  color: white;
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.serv-der {
+  float: left;
+  margin-left: 10%;
+  text-align: left;
+}
+
+.serv-izq {
+  float: right;
+  margin-right: 10%;
+  text-align: left;
+  margin-left: 15%;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-areas: "serv-der serv-izq";
+}
+
+.botongaleria {
+  margin-top: 5%;
+}
+.botongaleria a {
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  background-color: #F0DF99;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.main4 {
+  background-image: url(img/hotel4.jpg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding-left: auto;
+  padding-top: auto;
+}
+
+.contact-form {
+  float: left;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 3%;
+  color: white;
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  width: 40%;
+  margin-left: 7%;
+  margin-top: 2%;
+}
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+.contact-form form button {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+  background-color: #F0DF99;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+.contact-form form button:hover {
+  background-color: white;
+  color: #992915;
+}
+.contact-form form input {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+}
+.contact-form form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+}
+
+.contact-info {
+  background-color: rgba(0, 0, 0, 0.5);
+  float: right;
+  width: 40%;
+  margin-top: 7%;
+  padding: 5%;
+  padding: 7%;
+  color: white;
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  padding-top: 3%;
+  margin-right: 7%;
+}
+.contact-info ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.grid-layout2 {
+  grid-template-areas: "contact-form contact-info";
+}
+
+.footer {
+  height: 30%;
+  background-color: #55C4D7;
+}
+
+.logofooter {
+  font-family: "roboto", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  margin-left: 1%;
+  margin-top: 2%;
+  float: left;
+  width: 40%;
+}
+
+.redesfooter {
+  display: inline-block;
+  margin-top: 6%;
+  margin-right: 1%;
+  float: right;
+  width: 40%;
+  text-align: center;
+}
+
+.redes {
+  margin: 15px;
+}
+
+#boton-arriba {
+  position: fixed;
+  top: 90%;
+  right: 5%;
+}
+
+@media only screen and (max-width: 500px) {
+  .main1 {
+    height: 60%;
+  }
+  .fondoplaya {
+    background-position-x: 42%;
+  }
+  .header {
+    height: 22%;
+  }
+  .logo {
+    margin: 0;
+    padding-top: 6%;
+    max-width: 55%;
+  }
+  .nav-enlace {
+    font-size: 16px;
+    display: block;
+    text-align: right;
+    padding: 3px;
+  }
+  .frase {
+    font-size: 12px;
+    padding-top: 50%;
+    text-align: center;
+    margin: 0;
+  }
+  .borde1 {
+    height: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .nosotros {
+    font-size: 16px;
+    padding-top: 5%;
+    height: 110%;
+  }
+  .titulo {
+    font-size: 40px;
+  }
+  .main2 {
+    height: 210%;
+  }
+  .slider-container {
+    display: flex;
+    width: 90%;
+    height: auto;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin-left: 5%;
+  }
+  .slider-container img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+  }
+  .habitacion {
+    background-color: #55C4D7;
+    height: 28%;
+    text-align: center;
+  }
+  .nombre {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 7%;
+    margin-left: 20%;
+  }
+  .descripcion {
+    font-size: 16px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 7%;
+  }
+  .main3 {
+    font-size: 16px;
+    height: 120%;
+  }
+  .serv-der {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .serv-izq {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 5%;
+  }
+  .grid-layout {
+    display: grid;
+    grid-template-areas: "serv-der" "serv-izq";
+  }
+  .main4 {
+    height: 150%;
+  }
+  .contact-form {
+    width: 90%;
+    padding: 5%;
+    margin: 5%;
+    font-size: 16px;
+  }
+  .contact-info {
+    width: 90%;
+    padding: 5%;
+    margin: 5%;
+    font-size: 16px;
+  }
+  .grid-layout2 {
+    grid-template-areas: "contact-form" "contact-info";
+  }
+  .footer {
+    height: 25%;
+  }
+  .logofooter {
+    font-size: 10px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+  .redesfooter {
+    padding-top: 3%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .grid-layout3 {
+    grid-template-areas: "logofooter" "redesfooter";
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

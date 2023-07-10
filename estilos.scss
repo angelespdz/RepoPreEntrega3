@@ -1,0 +1,458 @@
+$color_1: white;
+$color_2: #1A748E;
+$color_3: #55C4D7;
+$color_4: black;
+$color_5: #992915;
+$font-family_1: 'Roboto', sans-serif;
+$font-family_2: 'Cinzel', sans-serif;
+$font-family_3: 'roboto', sans-serif;
+$font-family_4: 'Cormorant Garamond', serif;
+$font-family_5: 'Cormorant Garamond', sans-serif;
+$background-color_1: rgba(0, 0, 0, 0.3);
+$background-color_2: #1A748E;
+$background-color_3: #55C4D7;
+$background-color_4: #992915;
+$background-color_5: #F0DF99;
+$background-color_6: white;
+$background-color_7: rgba(0, 0, 0, 0.5);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+.fondoplaya {
+	background-image: url(img/fondoplayareco.jpg);
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+.header {
+	height: 20%;
+	background-color: $background-color_1;
+}
+.logo {
+	float: left;
+	margin-left: 0 0 0 0;
+}
+.navbar {
+	float: right;
+}
+.nav-enlace {
+	color: $color_1;
+	padding: 10px 20px;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 25px;
+	margin-top: 7%;
+	font-family: $font-family_1;
+	&:hover {
+		color: $color_2;
+	}
+}
+.main1 {
+	height: 45%;
+}
+.frase {
+	color: $color_1;
+	font-family: $font-family_2;
+	font-size: 30px;
+	margin: 10%;
+	text-shadow: 2px 2px 2px black;
+}
+.borde1 {
+	background-image: url(img/borde2.png);
+	height: 15%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.nosotros {
+	background-color: $background-color_2;
+	height: 100%;
+	font-family: $font-family_3;
+	color: $color_1;
+	font-size: 20px;
+	text-align: center;
+}
+.titulo {
+	font-size: 90px;
+	color: $color_3;
+	font-family: $font-family_4;
+}
+.division1 {
+	background-image: url(img/playaparaiso.jpg);
+	width: 100%;
+	height: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+.main2 {
+	background-color: $background-color_3;
+	height: 340%;
+	font-family: $font-family_3;
+	font-size: 20px;
+	color: $color_1;
+	text-align: center;
+}
+
+@keyframes cambio {
+	0% {
+		margin-left: 0;
+	}
+	20% {
+		margin-left: 0;
+	}
+	25% {
+		margin-left: -100%;
+	}
+	45% {
+		margin-left: -100%;
+	}
+	50% {
+		margin-left: -200%;
+	}
+	70% {
+		margin-left: -200%;
+	}
+	75% {
+		margin-left: -300%;
+	}
+	100% {
+		margin-left: -300%;
+	}
+}
+.slider {
+	width: 80%;
+	height: auto;
+	overflow: hidden;
+    margin: 10%;
+	ul {
+		width: 400%;
+		display: flex;
+		animation: cambio 12s infinite;
+	}
+	li {
+		width: 100%;
+		list-style: none;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.habitacion {
+	background-color: $background-color_3;
+	height: 5%;
+}
+.nombre {
+	color: $color_2;
+	font-size: 65px;
+	font-family: $font-family_5;
+	margin-left: 10%;
+	float: left;
+	margin-top: 3%;
+	text-align: left;
+}
+.descripcion {
+	color: $color_1;
+	font-size: 18px;
+	font-family: $font-family_3;
+	margin-right: 10%;
+	float: right;
+	margin-top: 4%;
+	text-align: center;
+}
+.division2 {
+	background-image: url(img/piscina.jpg);
+	width: 100%;
+	height: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+.main3 {
+	height: 90%;
+	background-color: $background-color_4;
+	color: $color_1;
+	font-family: $font-family_3;
+	font-size: 20px;
+	text-align: center;
+}
+.serv-der {
+	float: left;
+	margin-left: 10%;
+	text-align: left;
+}
+.serv-izq {
+	float: right;
+	margin-right: 10%;
+	text-align: left;
+	margin-left: 15%;
+}
+.grid-layout {
+	display: grid;
+	grid-template-areas: 'serv-der serv-izq';
+}
+.botongaleria {
+	margin-top: 5%;
+	a {
+		text-align: left;
+		text-decoration: none;
+		color: $color_4;
+		font-size: 25px;
+		background-color: $background-color_5;
+		padding: 8px;
+		border-radius: 5px;
+	}
+}
+.main4 {
+	background-image: url(img/hotel4.jpg);
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	padding-left: auto;
+	padding-top: auto;
+}
+.contact-form {
+	float: left;
+	background-color: $background-color_1;
+	padding: 3%;
+	color: $color_1;
+	font-family: $font-family_3;
+	font-size: 20px;
+	text-align: left;
+	width: 40%;
+	margin-left: 7%;
+	margin-top: 2%;
+	form {
+		p {
+			margin: 0;
+			padding: 1em;
+		}
+		button {
+			width: 100%;
+			padding: .7em;
+			border: none;
+			background: none;
+			border-bottom: 1px solid white;
+			outline: none;
+			color: $color_1;
+			background-color: $background-color_5;
+			border: 0;
+			text-transform: uppercase;
+			padding: 1em;
+			&:hover {
+				background-color: $background-color_6;
+				color: $color_5;
+			}
+		}
+		input {
+			width: 100%;
+			padding: .7em;
+			border: none;
+			background: none;
+			border-bottom: 1px solid white;
+			outline: none;
+			color: $color_1;
+		}
+		textarea {
+			width: 100%;
+			padding: .7em;
+			border: none;
+			background: none;
+			border-bottom: 1px solid white;
+			outline: none;
+			color: $color_1;
+		}
+	}
+}
+.contact-info {
+	background-color: $background-color_7;
+	float: right;
+	width: 40%;
+	margin-top: 7%;
+	padding: 5%;
+	padding: 7%;
+	color: $color_1;
+	font-family: $font-family_3;
+	font-size: 20px;
+	text-align: left;
+	padding-top: 3%;
+	margin-right: 7%;
+	ul {
+		li {
+			text-decoration: none;
+			list-style-type: none;
+		}
+	}
+}
+.grid-layout2 {
+	grid-template-areas: 'contact-form contact-info';
+}
+.footer {
+	height: 30%;
+	background-color: $background-color_3;
+}
+.logofooter {
+	font-family: $font-family_3;
+	font-size: 15px;
+	text-align: center;
+	color: $color_1;
+	margin-left: 1%;
+	margin-top: 2%;
+	float: left;
+	width: 40%;
+}
+.redesfooter {
+	display: inline-block;
+	margin-top: 6%;
+	margin-right: 1%;
+	float: right;
+	width: 40%;
+	text-align: center;
+}
+.redes{
+    margin: 15px;
+}
+#boton-arriba{
+    position: fixed;
+    top: 90%;
+    right: 5%;
+}
+
+@media only screen and (max-width:500px) {
+	.main1 {
+		height: 60%;
+	}
+	.fondoplaya {
+		background-position-x: 42%;
+	}
+	.header {
+		height: 22%;
+	}
+	.logo {
+		margin: 0;
+		padding-top: 6%;
+		max-width: 55%;
+	}
+	.nav-enlace {
+		font-size: 16px;
+		display: block;
+		text-align: right;
+		padding: 3px;
+	}
+	.frase {
+		font-size: 12px;
+		padding-top: 50%;
+		text-align: center;
+		margin: 0;
+	}
+	.borde1 {
+		height: 20%;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.nosotros {
+		font-size: 16px;
+		padding-top: 5%;
+		height: 110%;
+	}
+	.titulo {
+		font-size: 40px;
+	}
+	.main2 {
+		height: 210%;
+	}
+	.slider-container {
+		display: flex;
+		width: 90%;
+		height: auto;
+		overflow-x: scroll;
+		scroll-snap-type: x mandatory;
+		margin-left: 5%;
+		img {
+			flex: 0 0 100%;
+			width: 100%;
+			object-fit: cover;
+			scroll-snap-align: center;
+		}
+	}
+	.habitacion {
+		background-color: $background-color_3;
+		height: 28%;
+		text-align: center;
+	}
+	.nombre {
+		font-size: 40px;
+		text-align: center;
+		padding-top: 7%;
+		margin-left: 20%;
+	}
+	.descripcion {
+		font-size: 16px;
+		margin-left: 5%;
+		margin-right: 5%;
+		padding-top: 7%;
+	}
+	.main3 {
+		font-size: 16px;
+		height: 120%;
+	}
+	.serv-der {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.serv-izq {
+		margin-left: 10%;
+		margin-right: 10%;
+		padding-top: 5%;
+	}
+	.grid-layout {
+		display: grid;
+		grid-template-areas: 'serv-der' 'serv-izq';
+	}
+	.main4 {
+		height: 150%;
+	}
+	.contact-form {
+		width: 90%;
+		padding: 5%;
+		margin: 5%;
+		font-size: 16px;
+	}
+	.contact-info {
+		width: 90%;
+		padding: 5%;
+		margin: 5%;
+		font-size: 16px;
+	}
+	.grid-layout2 {
+		grid-template-areas: 'contact-form' 'contact-info';
+	}
+	.footer {
+		height: 25%;
+	}
+	.logofooter {
+		font-size: 10px;
+		text-align: center;
+		margin: 0;
+		width: 100%;
+	}
+	.redesfooter {
+		padding-top: 3%;
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	.grid-layout3 {
+		grid-template-areas: 'logofooter'
+		                     'redesfooter';
+	}
+}
